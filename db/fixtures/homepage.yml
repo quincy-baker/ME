@@ -1,0 +1,9 @@
+home_01:
+  title: "software developer"
+  images:
+    - type: "first"
+      src: "//localhost:3000/assets/homer.gif"
+    - type: "second"
+      src: "//localhost:3000/assets/rayj.gif"
+    - type: "third"
+      src: "//localhost:3000/assets/sldx.gif"
