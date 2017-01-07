@@ -1,9 +1,14 @@
-home_01:
-  title: "software developer"
+portfolio_item_01:
+  title: "Raymond James Inc"
   images:
-    - type: "first"
-      src: "//localhost:3000/assets/homer.gif"
-    - type: "second"
-      src: "//localhost:3000/assets/rayj.gif"
-    - type: "third"
-      src: "//localhost:3000/assets/sldx.gif"
+    src: "//localhost:3000/assets/rayj.gif"
+
+portfolio_item_01:
+  title: "Homer"
+  images:
+    src: "//localhost:3000/assets/homer.gif"
+
+portfolio_item_01:
+  title: "SolidX"
+  images:
+    src: "//localhost:3000/assets/sldx.gif"

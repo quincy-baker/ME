@@ -1,19 +1,38 @@
 %main{ data: { init: 'home', load: 'home' } }
   #homepage
     .container-fluid
-      - @homepage.each do |home| 
-      - next if home.nil?
-        .row.text-xs-center
-          .col-xs-4.offset-xs-4
-            %h1= home['title']
-        .container-fluid
-          .row.text-xs-center
-            .col-xs-12    
-              - main_img = home['images'].detect { |image| image['type'] == 'first' } 
-              = image_tag main_img['src'], class: 'img-fluid', id: 'homepage-header-image' 
-            .col-xs-12   
-              - main_img = home['images'].detect { |image| image['type'] == 'second' } 
-              = image_tag main_img['src'], class: 'img-fluid', id: 'homepage-header-image' 
-            .col-xs-12   
-              - main_img = home['images'].detect { |image| image['type'] == 'third' } 
-              = image_tag main_img['src'], class: 'img-fluid', id: 'homepage-header-image' 
+      .row.text-xs-center
+        .col-xs-10.offset-xs-1
+          #carouselExampleControls.carousel.slide{"data-ride" => "carousel"} 
+            .carousel-inner{:role => "listbox"}
+              - @portfolio.each do |item| 
+              - next if item.nil?
+                .carousel-item 
+                  .col-xs-5
+                    %br
+                    %br
+                    %h2= item['title']
+                    %hr
+                    .col-xs-10.offset-xs-1
+                      %p= item['description']
+                  .col-xs-7
+                    = image_tag item['images']['src'], class: 'img-fluid', id: 'homepage-header-image' 
+    %br
+    %br
+    %br
+    %br
+    %br
+    .container-fluid
+      .row.text-xs-center
+        .col-xs-10.offset-xs-1
+          .col-xs-4
+            .carousel-control-prev{"data-slide" => "prev", :role => "button"}
+              %span.carousel-control-next-icon{"aria-hidden" => "true"}
+              %span.sr-only{ onclick: '$(".carousel").carousel("prev")'} < prev
+          .col-xs-4
+          .col-xs-4
+            .carousel-control-next{"data-slide" => "next", :role => "button"}
+              %span.carousel-control-next-icon{"aria-hidden" => "true"}
+              %span.sr-only{ onclick: '$(".carousel").carousel("next")'} next >
+
+                

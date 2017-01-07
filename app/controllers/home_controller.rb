@@ -11,6 +11,7 @@ class HomeController < ApplicationController
 
   def get_variables
     @homepage = yaml_load(:homepage)
+    @portfolio = yaml_load(:portfolio_items)
   end
 
 end
