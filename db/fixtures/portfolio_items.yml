@@ -1,17 +1,17 @@
 portfolio_item_01:
   title: "Raymond James Inc"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque. Nullam nisi urna, scelerisque at sem quis, rutrum dignissim sem. Nulla facilisi. Nullam dolor elit, sagittis nec rutrum eget, iaculis eget leo. Morbi massa ante, mattis sed tempor at, pharetra ut arcu. In sit amet nulla pulvinar elit volutpat vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum quam in lobortis volutpat. Suspendisse vestibulum metus nec auctor commodo. Nulla id ex convallis, dapibus metus vitae, accumsan nisi. Curabitur et dui quis nulla sodales tempor et sed nisl."
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque."
   images:
     src: "//localhost:3000/assets/rayj.gif"
 
 portfolio_item_02:
   title: "Homer"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque. Nullam nisi urna, scelerisque at sem quis, rutrum dignissim sem. Nulla facilisi. Nullam dolor elit, sagittis nec rutrum eget, iaculis eget leo. Morbi massa ante, mattis sed tempor at, pharetra ut arcu. In sit amet nulla pulvinar elit volutpat vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum quam in lobortis volutpat. Suspendisse vestibulum metus nec auctor commodo. Nulla id ex convallis, dapibus metus vitae, accumsan nisi. Curabitur et dui quis nulla sodales tempor et sed nisl."
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque."
   images:
     src: "//localhost:3000/assets/homer.gif"
 
 portfolio_item_03:
   title: "SolidX"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque. Nullam nisi urna, scelerisque at sem quis, rutrum dignissim sem. Nulla facilisi. Nullam dolor elit, sagittis nec rutrum eget, iaculis eget leo. Morbi massa ante, mattis sed tempor at, pharetra ut arcu. In sit amet nulla pulvinar elit volutpat vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum quam in lobortis volutpat. Suspendisse vestibulum metus nec auctor commodo. Nulla id ex convallis, dapibus metus vitae, accumsan nisi. Curabitur et dui quis nulla sodales tempor et sed nisl."
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque."
   images:
     src: "//localhost:3000/assets/sldx.gif"

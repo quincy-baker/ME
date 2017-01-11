@@ -5,7 +5,7 @@
         .col-lg-4.offset-lg-4.col-xs-6.offset-xs-3
           - @homepage.each do |item| 
           - next if item.nil?
-            = image_tag item['images']['src'], class: 'img-fluid' 
+            = image_tag item['images']['src'], class: 'img-fluid', id: 'homepage-main-image'
             / %h1= item['title']  
       %br
       .row.text-xs-center
@@ -13,19 +13,21 @@
           %i= icon('chevron-down', id: 'arrow-down-icon', class: 'img-fluid') 
       .row.text-xs-center
   #homepage-secondary-slide
-    .container-fluid
+    .container-fluid{style:'margin-top:50px;'}
       .row.text-xs-center
-        .col-lg-12.col-xs-12
+        .col-xs-12
           #carouselExampleControls.carousel.slide{"data-ride" => "carousel"} 
             .carousel-inner{:role => "listbox"}
               - @portfolio.each do |item| 
               - next if item.nil?
                 .carousel-item 
                   .row.text-xs-center                      
-                    .col-lg-8.offset-lg-2.col-xs-12
+                    .col-lg-4.col-xs-12
+                      %br
+                      %br
                       %h2.item-title= item['title']
                       %hr
                       %p.item-description= item['description']
-                  .row.text-xs-center
-                    .col-lg-12.col-xs-12
+                    .col-lg-8.col-xs-12
                       = image_tag item['images']['src'], class: 'img-fluid portfolio-gif' 
+    }

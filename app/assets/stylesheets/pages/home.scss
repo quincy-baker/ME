@@ -14,9 +14,11 @@
     h2{
       color:black;
     }
+    .item-title {}
     .item-description {
       text-align: center;
       color: black;
+      font-family: $avant; 
     }
     .portfolio-gif {
       height: auto;
@@ -27,13 +29,12 @@
   #homepage-primary-slide{
     background: white;
     position: absolute;
-    top: 100px;
+    top: 60px;
     bottom: 0;
     left: 0;
     right: 0;
-    img {
-      // width:auto;
-      margin: 10px;
+    #homepage-main-image{
+      padding:40px;
     }
     #arrow-down-icon {
       font-size: 36px;
