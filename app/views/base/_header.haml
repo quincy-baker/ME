@@ -1,7 +1,16 @@
 %main{ data: { init: 'header', load: 'header' } }
   #header
-    .container
-      .row
-        .col-xs-12.text-xs-center
+    .container-fluid
+      .row.text-xs-center
+        .col-xs-5
+          .float-xs-left.carousel-control-prev{"data-slide" => "prev", :role => "button"}
+            %span.carousel-control-next-icon{"aria-hidden" => "true"}
+            %span.sr-only#previous-slide < prev
+        .col-xs-2
           %img{:alt => "", :height => "50", :src => "//www.mebank.com.au/media/2084734/ME-logo-600px-white.jpg", :width => "50"}
-     
+        .col-xs-5
+          .float-xs-right.carousel-control-next{"data-slide" => "next", :role => "button"}
+            %span.carousel-control-next-icon{"aria-hidden" => "true"}
+            %span.sr-only#next-slide next >
+    %br
+    %br

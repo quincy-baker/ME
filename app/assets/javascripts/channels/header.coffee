@@ -1,0 +1,7 @@
+window.header =
+  init: ->
+    
+  load: ->
+    
+
+    

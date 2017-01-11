@@ -1,38 +1,31 @@
 %main{ data: { init: 'home', load: 'home' } }
-  #homepage
+  #homepage-primary-slide
     .container-fluid
       .row.text-xs-center
-        .col-xs-10.offset-xs-1
+        .col-lg-4.offset-lg-4.col-xs-6.offset-xs-3
+          - @homepage.each do |item| 
+          - next if item.nil?
+            = image_tag item['images']['src'], class: 'img-fluid' 
+            / %h1= item['title']  
+      %br
+      .row.text-xs-center
+        .col-xs-12
+          %i= icon('chevron-down', id: 'arrow-down-icon', class: 'img-fluid') 
+      .row.text-xs-center
+  #homepage-secondary-slide
+    .container-fluid
+      .row.text-xs-center
+        .col-lg-12.col-xs-12
           #carouselExampleControls.carousel.slide{"data-ride" => "carousel"} 
             .carousel-inner{:role => "listbox"}
               - @portfolio.each do |item| 
               - next if item.nil?
                 .carousel-item 
-                  .col-xs-5
-                    %br
-                    %br
-                    %h2= item['title']
-                    %hr
-                    .col-xs-10.offset-xs-1
-                      %p= item['description']
-                  .col-xs-7
-                    = image_tag item['images']['src'], class: 'img-fluid', id: 'homepage-header-image' 
-    %br
-    %br
-    %br
-    %br
-    %br
-    .container-fluid
-      .row.text-xs-center
-        .col-xs-10.offset-xs-1
-          .col-xs-4
-            .carousel-control-prev{"data-slide" => "prev", :role => "button"}
-              %span.carousel-control-next-icon{"aria-hidden" => "true"}
-              %span.sr-only{ onclick: '$(".carousel").carousel("prev")'} < prev
-          .col-xs-4
-          .col-xs-4
-            .carousel-control-next{"data-slide" => "next", :role => "button"}
-              %span.carousel-control-next-icon{"aria-hidden" => "true"}
-              %span.sr-only{ onclick: '$(".carousel").carousel("next")'} next >
-
-                
+                  .row.text-xs-center                      
+                    .col-lg-8.offset-lg-2.col-xs-12
+                      %h2.item-title= item['title']
+                      %hr
+                      %p.item-description= item['description']
+                  .row.text-xs-center
+                    .col-lg-12.col-xs-12
+                      = image_tag item['images']['src'], class: 'img-fluid portfolio-gif' 

@@ -14,6 +14,8 @@ gem 'bootstrap', '~> 4.0.0.alpha5'
 gem 'tether-rails', '~> 1.3.3'
 gem 'rack-cors', '~> 0.4.0'
 
+gem 'font-awesome-sass', '~> 4.7.0'
+
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
