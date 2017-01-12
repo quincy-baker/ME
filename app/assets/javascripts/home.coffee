@@ -10,6 +10,7 @@ window.home =
     $('#homepage-secondary-slide').css 'top', $("#homepage-secondary-slide").height()
     $('.carousel-item').eq(0).addClass 'active'
   load: ->
+    $('.carousel').carousel 'pause'
     $(home.el.slides).on('mousewheel', home.disableScroll)
     $(home.el.arrow_down).on('click', home.slideDownHomepage)
     
@@ -37,7 +38,7 @@ window.home =
 
     slide_height = $('#homepage-secondary-slide').height()
 
-    $('#homepage-main-image').fadeToggle 1250
+    $('#homepage-main-image #github-link').fadeToggle 1250
     $('#header').fadeToggle 2000
 
     $('#homepage-secondary-slide').animate {

@@ -6,7 +6,9 @@
           - @homepage.each do |item| 
           - next if item.nil?
             = image_tag item['images']['src'], class: 'img-fluid', id: 'homepage-main-image'
-            / %h1= item['title']  
+            / %h1= item['title'] 
+          %a{ href: '//github.com/matthew-elia'}
+            %h3= icon('github', id: 'github-link', style: 'color:black;') 
       %br
       .row.text-xs-center
         .col-xs-12
@@ -29,5 +31,4 @@
                       %hr
                       %p.item-description= item['description']
                     .col-lg-8.col-xs-12
-                      = image_tag item['images']['src'], class: 'img-fluid portfolio-gif' 
-    }
+                      = image_tag ''+item['images']['src']+'', class: 'img-fluid portfolio-gif'
