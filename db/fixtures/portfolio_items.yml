@@ -1,17 +1,20 @@
 portfolio_item_01:
   title: "Raymond James Inc"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque."
+  description: "Built animation-heavy web application for client: financial services firm, RAYMOND JAMES FINANCIAL INC (RJF - NYSE).  Utilized D3js - Data Visualization JS library.  Code Samples upon request"
   images:
     src: "rayj.gif"
 
 portfolio_item_02:
   title: "Homer"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque."
+  description: "Real Estate web application built on MySQL, PHP (Laravel) backend. Core frontend logic written in  “vanilla” Javascript, utilizing Google Maps, Places, Directions, and Distance Matrix Service APIs.
+Algorithm sorts all apartment rental listings on the market displaying each building ordered by approximate annual transit time per year for the User.  26-page Provisional Patent filed by Client/Bryan Cave LLC on behalf of my work.
+  • ‘SYSTEMS AND METHODS FOR SELECTING OPTIMAL PROPERTY LOCATIONS BASED ON LOGISTICAL CONCERNS’
+  • Provisional patent identifier ‘03923358’"
   images:
     src: "homer.gif"
 
 portfolio_item_03:
   title: "SolidX"
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a viverra ex. Vestibulum lacinia velit in efficitur congue. Sed ligula quam, finibus a purus sed, elementum tempus lectus. Sed sapien metus, porttitor a posuere ut, suscipit vitae turpis. Pellentesque mollis hendrerit turpis vitae pellentesque."
+  description: "SolidX (www.sldx.com) - Bitcoin / Blockchain company.  Scroll-Based Animation."
   images:
     src: "sldx.gif"
