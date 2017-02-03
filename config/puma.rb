@@ -11,12 +11,12 @@ threads threads_count, threads_count
 #
 port        ENV.fetch("PORT") { 3000 }
 
-bind "unix:///var/run/puma/blankspace.sock"
-pidfile "/var/run/puma/blankspace.sock"
+# bind "unix:///var/run/puma/blankspace.sock"
+# pidfile "/var/run/puma/blankspace.sock"
 
 # Specifies the `environment` that Puma will run in.
 #
-environment ENV.fetch("RAILS_ENV") { "production" }
+environment ENV.fetch("RAILS_ENV") { "development" }
 
 
 # Specifies the number of `workers` to boot in clustered mode.

@@ -1,16 +1,32 @@
 window.header =
+  el:
+    nav_icon: '#nav-icon'
+		menu: '#menu'  
+
   init: ->
-    $('.carousel').carousel 'pause'
+  
   load: ->
-    $('#previous-slide').on('click', header.previousSlide)
-    $('#next-slide').on('click', header.nextSlide)
+    $(header.el.nav_icon).on('click', header.toggleMenu)
 
-  previousSlide: ->
-    $('.carousel').carousel 'prev'
-    
-  nextSlide: ->
-    $('.carousel').carousel 'next'
+ 	toggleMenu: ->
+ 		$(this).toggleClass 'open'
 
-    
+ 		if $(this).hasClass "open"
+		  $('#content').animate {
+		    'right': '110%',
+		    'opacity': '0'
+		  }, 400
+		  $('#menu').animate {
+		    'opacity': '1',
+		    'right': '0'
+		  }, 400
 
-    
+ 		else
+		  $('#menu').animate {
+		    'right': '-110%',
+		    'opacity': '0'
+		  }, 400
+		  $('#content').animate {
+		    'opacity': '1',
+		    'right': '0'
+		  }, 400

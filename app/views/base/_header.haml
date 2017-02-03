@@ -1,19 +1,17 @@
 %main{ data: { init: 'header', load: 'header' } }
   #header
+    .text-xs-right
+      #nav-icon
+        %span
+        %span
+        %span
+        %span
+  #menu
     .container-fluid
       .row.text-xs-center
-        .col-xs-4
-          .float-xs-left.carousel-control-prev{"data-slide" => "prev", :role => "button"}
-            %span.carousel-control-next-icon{"aria-hidden" => "true"}
-            %span.sr-only= icon('chevron-left', id: 'previous-slide', class: 'img-fluid') 
-        .col-xs-4
-          %span{style: 'display:inline-flex;'}
-            %h3.hidden-xs-down mattelia
-            %img{:alt => "", :height => "25", :src => "//www.mebank.com.au/media/2084734/ME-logo-600px-white.jpg", :width => "25"}
-            %h3.hidden-xs-down com
-        .col-xs-4
-          .float-xs-right.carousel-control-next{"data-slide" => "next", :role => "button"}
-            %span.carousel-control-next-icon{"aria-hidden" => "true"}
-            %span.sr-only= icon('chevron-right', id: 'next-slide', class: 'img-fluid') 
-    %br
-    %br
+        .col-xs-12
+          %ul.list-unstyled
+            %li
+              = link_to 'bio', root_path, class: 'menu-link'
+            %li
+              = link_to 'work', work_path, class: 'menu-link'

@@ -1,31 +1,19 @@
 %main{ data: { init: 'home', load: 'home' } }
-  #homepage-primary-slide
-    .container-fluid
-      .row.text-xs-center
-        .col-lg-4.offset-lg-4.col-xs-6.offset-xs-3
-          - @homepage.each do |item| 
-          - next if item.nil?
-            = image_tag item['images']['src'], class: 'img-fluid', id: 'homepage-main-image'
-            / %h1= item['title'] 
-          %a{ href: '//github.com/matthew-elia'}
-            %h3= icon('github', id: 'github-link', style: 'color:black;') 
-      %br
-      .row.text-xs-center
-        .col-xs-12
-          %i= icon('chevron-down', id: 'arrow-down-icon', class: 'img-fluid') 
-      .row.text-xs-center
-  #homepage-secondary-slide
-    .container-fluid{style:'margin-top:20px;'}
-      .row.text-xs-center
-        .col-xs-12
-          #carouselExampleControls.carousel.slide{"data-ride" => "carousel"} 
-            .carousel-inner{:role => "listbox"}
-              - @portfolio.each do |item| 
-              - next if item.nil?
-                .carousel-item 
-                  .row.text-xs-center                      
-                    .col-xs-12
-                      %br
-                      %h2.item-title= item['title']
-                      %hr
-                      = image_tag ''+item['images']['src']+'', class: 'img-fluid portfolio-gif'
+  #bio.container-fluid
+    .bio-header.row.text-xs-center
+      .col-lg-4.offset-lg-4.col-xs-12
+        %h1 matthew elia
+        %h6 software developer
+        %hr
+    .bio-content.row.text-xs-left
+      .col-lg-4.offset-lg-4.col-xs-12
+        %p based in new york city.
+        %br
+        %p 5+ years experience building web apps of all shapes and sizes for internationally recognized brands such as canon, subaru, and raymond james.
+        %br
+        %p currently most interested in building location-based + real-time applications.
+    .bio-footer.row.text-xs-center
+      .col-lg-4.offset-lg-4.col-xs-6.offset-xs-3
+        %br
+        %a{ href: '//github.com/matthew-elia'}
+          = icon('github', id: 'github-icon')

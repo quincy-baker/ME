@@ -1,0 +1,15 @@
+%main{ data: { init: 'work', load: 'work' } }
+  .container-fluid{style:'margin-top:20px;'}
+    .row.text-xs-center
+      .col-xs-12
+        #carouselExampleControls.carousel.slide{"data-ride" => "carousel"} 
+          .carousel-inner{:role => "listbox"}
+            - @portfolio.each do |item| 
+            - next if item.nil?
+              .carousel-item 
+                .row.text-xs-center                      
+                  .col-xs-12
+                    %br
+                    %h2.item-title= item['title']
+                    %hr
+                    = image_tag ''+item['images']['src']+'', class: 'img-fluid portfolio-gif'

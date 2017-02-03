@@ -1,53 +1,28 @@
-* {
-	font-family: $nyc1970;
+h1,h2,h3,h4,h5,h6 {
+	font-family: $spartan;
+  color: black;
 }
-
-
-  #homepage-secondary-slide{
-    padding-top: 20px;
-    position: absolute;
-    background: white;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    h2{
-      color:black;
-    }
-    .item-title {}
-    .item-description {
-      text-align: center;
-      color: black;
-      font-family: $avant; 
-    }
-    .portfolio-gif {
-      height: auto;
-      width: 100%;
-    }
-  }
-  
-  #homepage-primary-slide{
-    background: white;
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    #homepage-main-image{
-      padding:40px;
-    }
-    #arrow-down-icon {
-      font-size: 36px;
-      color: black;
-      position: fixed;
-      bottom:50px;
-      left: 0;
-      right: 0;
-      cursor: pointer;
-    }
-  }
-  .carousel-item {
+p,i {
+  font-family: $lato;
+  color: black;
+}
+#bio{
+  margin-top:100px;
+  .bio-header{
     hr {
-      width: 25%;
+      margin: 20px 33%;
+      background-color: cornflowerblue;
     }
   }
+  .bio-content{
+    p,i {
+      display: inline-flex;
+    }
+  }
+  .bio-footer {
+    #github-icon {
+      color: $nantucketRed;
+      font-size:36px;
+    }
+  }
+}
