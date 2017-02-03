@@ -2,9 +2,9 @@
   #header.container-fluid
     .row.text-xs-center
       #nav___left.text-xs-left.hidden-sm-down
-        -if !params[:work_item].nil? && current_page?(work_item_path(params[:work_item]))
+        - if !params[:work_item].nil?
           = link_to :back do
-            = icon('arrow-circle-left')      
+            = icon('chevron-left')      
         - elsif !current_page?(root_path)
           = link_to :root do
             = icon('home')
@@ -21,8 +21,6 @@
       .row.text-xs-center
         .col-xs-12
           %ul.list-unstyled
-            %li
-              = link_to 'home', root_path, class: 'menu-link'
             %li
               = link_to 'bio', bio_path, class: 'menu-link'
             %li

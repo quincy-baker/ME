@@ -6,7 +6,7 @@
 		z-index: 3000;
 		> * , > * > * , > * > * > *  {
 			font-size:36px;
-			color: white;
+			color: black;
 			&:hover {
 				color: $watermelon;
 			}
@@ -42,7 +42,7 @@
 			position: absolute;
 			height: 4px;
 			width: 100%;
-			background: white;
+			background: black;
 			border-radius: 9px;
 			opacity: 1;
 			right: 0;
@@ -98,11 +98,11 @@
 	right:-110%;
 	opacity: 0;
 	z-index:1000;
-	background: black;
+	background: white;
 	.menu-link {
 		font-family: $spartan;
 		font-size:30px;
-		color: white;
+		color: black;
 		text-decoration: none;
 		margin:40px;
 		position: relative;
