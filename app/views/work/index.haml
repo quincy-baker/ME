@@ -1,15 +1,11 @@
 %main{ data: { init: 'work', load: 'work' } }
-  .container-fluid{style:'margin-top:20px;'}
+  = video_tag("nurture.mp4", "nurture.mp4", :loop=>'true', :autoplay=>'true', style: 'position:fixed;top:0;left:110%;opacity:0;', id: 'work-bg-vid')
+  #work.container
     .row.text-xs-center
-      .col-xs-12
-        #carouselExampleControls.carousel.slide{"data-ride" => "carousel"} 
-          .carousel-inner{:role => "listbox"}
-            - @portfolio.each do |item| 
-            - next if item.nil?
-              .carousel-item 
-                .row.text-xs-center                      
-                  .col-xs-12
-                    %br
-                    %h2.item-title= item['title']
-                    %hr
-                    = image_tag ''+item['images']['src']+'', class: 'img-fluid portfolio-gif'
+      - @portfolio.each do |item| 
+      - next if item.nil?
+        .col-lg-3.col-md-4.col-sm-6.col-xs-12{style: 'padding:4px;margin:0;'}
+          .work-item-thumb.img-thumbnail
+            / %h2.item-title= item['title']
+            = link_to work_item_path(item['permalink']) do
+              = image_tag ''+item['images']['src']+'', class: 'img-fluid logo-thumb-img'

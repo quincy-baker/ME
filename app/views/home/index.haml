@@ -1,19 +1,20 @@
 %main{ data: { init: 'home', load: 'home' } }
-  #bio.container-fluid
-    .bio-header.row.text-xs-center
-      .col-lg-4.offset-lg-4.col-xs-12
-        %h1 matthew elia
-        %h6 software developer
-        %hr
-    .bio-content.row.text-xs-left
-      .col-lg-4.offset-lg-4.col-xs-12
-        %p based in new york city.
-        %br
-        %p 5+ years experience building web apps of all shapes and sizes for internationally recognized brands such as canon, subaru, and raymond james.
-        %br
-        %p currently most interested in building location-based + real-time applications.
-    .bio-footer.row.text-xs-center
-      .col-lg-4.offset-lg-4.col-xs-6.offset-xs-3
-        %br
-        %a{ href: '//github.com/matthew-elia'}
-          = icon('github', id: 'github-icon')
+  #splash-screen
+    .container-fluid
+      .row.text-xs-center
+        %h1 mattelia[dot]com
+      .row.text-xs-center
+        = icon('chevron-down', id: 'splash-screen-arrow-down')
+  #home
+    #left-panel
+      = link_to bio_path do
+        = video_tag("nature.mp4", "nature.mp4", :loop=>'true', :autoplay=>'false', id: "nature")
+      #left-panel-overlay
+        %h1
+          portfolio
+    #right-panel
+      = link_to work_path do
+        = video_tag("nurture.mp4", "nurture.mp4", :loop=>'true', :autoplay=>'false', id: "nyc")
+      #right-panel-overlay
+        %h1
+          bio

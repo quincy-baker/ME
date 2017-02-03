@@ -1,0 +1,6 @@
+%main{ data: { init: 'work', load: 'work' } }
+  #work.container
+    .row.text-xs-center
+      %h2.item-title= @work_item['title']
+      = image_tag ''+@work_item['images']['src']+'', class: 'img-fluid logo-thumb-img'
+      %p= @work_item['description']

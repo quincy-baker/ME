@@ -14,19 +14,23 @@ window.header =
  		if $(this).hasClass "open"
 		  $('#content').animate {
 		    'right': '110%',
-		    'opacity': '0'
-		  }, 400
+		    'opacity': '0',
+		    'z-index': '1000'
+		  }, 500
 		  $('#menu').animate {
 		    'opacity': '1',
-		    'right': '0'
-		  }, 400
+		    'right': '0',
+		    'z-index': '2000'
+		  }, 500
 
  		else
 		  $('#menu').animate {
 		    'right': '-110%',
-		    'opacity': '0'
-		  }, 400
+		    'opacity': '0',
+		    'z-index': '1000'
+		  }, 500
 		  $('#content').animate {
 		    'opacity': '1',
-		    'right': '0'
-		  }, 400
+		    'right': '0',
+		    'z-index': '2000'
+		  }, 500

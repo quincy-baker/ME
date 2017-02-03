@@ -1,0 +1,28 @@
+h1,h2,h3,h4,h5,h6 {
+	font-family: $spartan;
+  color: black;
+}
+p,i {
+  font-family: $lato;
+  color: black;
+}
+#bio{
+  margin-top:100px;
+  .bio-header{
+    hr {
+      margin: 30px;
+      background-color: black;
+    }
+  }
+  .bio-content{
+    p,i {
+      display: inline-flex;
+    }
+  }
+  .bio-footer {
+    #github-icon {
+      color: black;
+      font-size:36px;
+    }
+  }
+}

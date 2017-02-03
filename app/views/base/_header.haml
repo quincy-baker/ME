@@ -1,17 +1,29 @@
 %main{ data: { init: 'header', load: 'header' } }
-  #header
-    .text-xs-right
-      #nav-icon
-        %span
-        %span
-        %span
-        %span
+  #header.container-fluid
+    .row.text-xs-center
+      #nav___left.text-xs-left.hidden-sm-down
+        -if !params[:work_item].nil? && current_page?(work_item_path(params[:work_item]))
+          = link_to :back do
+            = icon('arrow-circle-left')      
+        - elsif !current_page?(root_path)
+          = link_to :root do
+            = icon('home')
+      #nav__middle.hidden-sm-down
+      #nav__right.text-xs-right
+        - if !current_page?(root_path)
+          #nav-icon
+            %span
+            %span
+            %span
+            %span
   #menu
     .container-fluid
       .row.text-xs-center
         .col-xs-12
           %ul.list-unstyled
             %li
-              = link_to 'bio', root_path, class: 'menu-link'
+              = link_to 'home', root_path, class: 'menu-link'
+            %li
+              = link_to 'bio', bio_path, class: 'menu-link'
             %li
               = link_to 'work', work_path, class: 'menu-link'

@@ -9,8 +9,16 @@ html,body {
   left: 0;
   bottom: 0;
   right: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 #content {
   position: relative;
+  z-index: 2000;
+  @media(min-width: 768px) {
+    top:125px;
+  }
+  @media(min-width: 992px) {
+    top:150px;
+  }
 }
