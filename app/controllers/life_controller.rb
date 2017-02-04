@@ -1,4 +1,4 @@
-class ContactController < ApplicationController
+class LifeController < ApplicationController
   
   include ApplicationHelper
 

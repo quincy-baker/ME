@@ -1,30 +1,6 @@
-// .scroll-arrow {
-//   font-size: 50px;
-//   color: $blue;
-//   &:hover {
-//     cursor: pointer;
-//     color: $blue;
-//   }
-// }
-
-// #splash-screen{
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   padding:25px;
-  // h1 {
-  //   position: fixed;
-  //   top: 15px;
-  //   left:0;
-  //   right: 0;
-  //   text-align: center;
-  // }
-// }
-
-#home {
-  #nav-title{
+// FIX: separate side-menu dependencies
+#home, #menu {
+  #nav-title {
     position: fixed;
     top:20px;
     left:0;
@@ -51,7 +27,7 @@
     .video-container {
       position: relative;
     }
-    @media(min-width:768px) {
+    @media (min-width:768px) {
       .video-container {
         position: absolute;
         width: 50%;
@@ -75,10 +51,7 @@
     }
     .overlay-desc {
       &:hover {
-        background: rgba(0,0,0,0.75);
-        h1 {
-          color: $blue;
-        }
+        background: rgba(100,149,237,0.69);
       }
       position: absolute;
       top: 0;

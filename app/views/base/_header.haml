@@ -17,16 +17,27 @@
     .container-fluid
       .row.text-xs-center
         .col-xs-12
-          %ul.list-unstyled
-            %li
-              = link_to 'life', bio_path, class: 'menu-link'
-            %li
-              = link_to 'work', work_path, class: 'menu-link'
-            %li
-              - if !current_page?(root_path)
-                = link_to :root do
-                  = icon('anchor', style: 'font-size:50px;')
+          //clean up br's 
+          %br
+          %br
+          %br
+          = link_to work_path do
+            .video-container
+              = video_tag("nurture.mp4", "nurture.mp4", :loop=>'true', :autoplay=>'false', id: "nyc")
+              .overlay-desc
+                %h1 work
+          
+          //clean up br's 
+          %br.hidden-md-up
+
+          = link_to life_path do
+            .video-container
+              = video_tag("nature.mp4", "nature.mp4", :loop=>'true', :autoplay=>'false', id: "nature")
+              .overlay-desc
+                %h1 life
+
     %footer{style: 'position:fixed;bottom:0;left:0;right:0;padding-bottom:30px;'}
       .container-fluid
         .row.text-xs-center
-          = icon('envelope', style: 'font-size:35px;')
+          = link_to :root do
+            = icon('anchor', '', style: 'font-size:35px;')

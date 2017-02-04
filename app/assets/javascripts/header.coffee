@@ -22,7 +22,6 @@ window.header =
 		    'right': '0',
 		    'z-index': '2000'
 		  }, 500
-
  		else
 		  $('#menu').animate {
 		    'right': '-110%',

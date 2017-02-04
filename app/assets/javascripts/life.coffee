@@ -1,3 +1,3 @@
-window.bio =
+window.life =
   init: ->
   load: ->
