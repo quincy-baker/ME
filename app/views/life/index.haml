@@ -1,0 +1,19 @@
+%main{ data: { init: 'life', load: 'life' } }
+  #life.container-fluid
+    .row.text-xs-center
+      .col-lg-4.offset-lg-4.col-xs-12
+        .life-header
+          %h1 matthew elia
+          %h6 software developer
+          %hr
+        .life-content.text-xs-left
+          %p based in new york city.
+          %br
+          %p 5+ years experience building web apps of all shapes and sizes, including work for internationally reputable brands such as Canon and Raymond James Financial.
+          %br
+          %p currently enjoy working on location-based + real-time applications.
+        .life-footer
+          %a{ href: '//github.com/matthew-elia' }
+            = icon( 'github', class: 'github-icon' )
+          %a{ href: 'mailto:m4tth3w.3l1a@gmail.com' }
+            = icon( 'envelope', class: 'envelope-icon' )

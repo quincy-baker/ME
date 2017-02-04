@@ -1,5 +1,4 @@
 %main{ data: { init: 'home', load: 'home' } }
-  / #splash-screen
   #home    
     .container-fluid
       .row.text-xs-center
@@ -10,9 +9,7 @@
       .row.text-xs-center.hidden-sm-down
         .col-md-2.offset-md-5
           %br
-          / %hr
-          / = icon('chevron-down', class: 'scroll-arrow')
-    = link_to bio_path do
+    = link_to life_path do
       .video-container
         = video_tag("nature.mp4", "nature.mp4", :loop=>'true', :autoplay=>'false', id: "nature")
         .overlay-desc

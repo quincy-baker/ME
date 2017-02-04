@@ -6,20 +6,20 @@ p,i {
   font-family: $lato;
   color: black;
 }
-#bio{
+#life{
   margin-top:80px;
-  .bio-header{
+  .life-header{
     hr {
       margin: 30px;
       background-color: $blue;
     }
   }
-  .bio-content{
+  .life-content{
     p,i {
       display: inline-flex;
     }
   }
-  .bio-footer {
+  .life-footer {
     margin-top:20px;
     [class$="-icon"] {
       margin:5px;
