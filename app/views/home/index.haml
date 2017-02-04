@@ -5,13 +5,10 @@
       .row.text-xs-center
         .col-xs-12
           %h2#nav-title matt elia
-        .col-xs-8.offset-xs-2
-          %p.text-muted software developer, nyc
+          %p#nav-subtitle.text-muted SOFTWARE DEVELOPER, NYC
       .row.text-xs-center.hidden-sm-down
         .col-md-2.offset-md-5
           %br
-          / %hr
-          / = icon('chevron-down', class: 'scroll-arrow')
     = link_to bio_path do
       .video-container
         = video_tag("nature.mp4", "nature.mp4", :loop=>'true', :autoplay=>'false', id: "nature")

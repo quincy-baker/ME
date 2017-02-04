@@ -7,6 +7,14 @@ portfolio_item_01:
     gif: "rayj.gif"
 
 portfolio_item_02:
+  title: "Canon"
+  permalink: "canon"
+  description: "built interactive kiosk for the annual Canon Expo at the Javits Center"
+  images:
+    src: "canon-logo.png"
+    gif: "canon-expo-2015.jpg"
+
+portfolio_item_03:
   title: "Homer"
   permalink: "homer"
   description: "Real Estate web application built on MySQL, PHP (Laravel) backend. Core frontend logic written in  “vanilla” Javascript, utilizing Google Maps, Places, Directions, and Distance Matrix Service APIs.
@@ -16,13 +24,6 @@ Algorithm sorts all apartment rental listings on the market displaying each buil
   images:
     src: "homer-logo.png"
     gif: "homer.gif"
-
-portfolio_item_03:
-  title: "Canon"
-  permalink: "canon"
-  description: "built interactive kiosk for the annual Canon Expo at the Javits Center"
-  images:
-    src: "canon-logo.png"
 
 portfolio_item_04:
   title: "Douglas Elliman"

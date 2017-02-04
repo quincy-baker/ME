@@ -24,13 +24,24 @@
 // }
 
 #home {
-  #nav-title {
+  #nav-title{
     position: fixed;
-    top:25px;
+    top:20px;
     left:0;
     right: 0;
-    @media(max-width:767px){
-
+    @media(min-width:768px){
+      top:50px;
+    }
+  }
+  #nav-subtitle {
+    position: fixed;
+    top:55px;
+    left:0;
+    right: 0;
+    letter-spacing: 2px;
+    @media(min-width:768px){
+      letter-spacing: 4px;
+      top:100px;
     }
   }
   hr {
