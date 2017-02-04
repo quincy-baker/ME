@@ -1,16 +1,13 @@
 %main{ data: { init: 'header', load: 'header' } }
   #header.container-fluid
     .row.text-xs-center
-      #nav___left.text-xs-left.hidden-sm-down
+      #nav___left.text-xs-left
         - if !params[:work_item].nil?
           = link_to :back do
             = icon('chevron-left')      
-        - elsif !current_page?(root_path)
-          = link_to :root do
-            = icon('home')
       #nav__middle.hidden-sm-down
       #nav__right.text-xs-right
-        - if !current_page?(root_path)
+        - if !current_page?(root_path) && params[:work_item].nil?
           #nav-icon
             %span
             %span
@@ -22,6 +19,15 @@
         .col-xs-12
           %ul.list-unstyled
             %li
-              = link_to 'bio', bio_path, class: 'menu-link'
+              = link_to 'life', bio_path, class: 'menu-link'
             %li
               = link_to 'work', work_path, class: 'menu-link'
+            %li
+              - if !current_page?(root_path)
+                = link_to :root do
+                  = icon('home', style: 'font-size:50px;')
+
+    %footer{style: 'position:fixed;bottom:0;left:0;right:0;padding-bottom:30px;'}
+      .container-fluid
+        .row.text-xs-center
+          = icon('envelope', style: 'font-size:35px;')

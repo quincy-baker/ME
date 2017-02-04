@@ -8,7 +8,7 @@
 			font-size:36px;
 			color: black;
 			&:hover {
-				color: $watermelon;
+				color: $blue;
 			}
 		}
 		&:first-of-type{
@@ -37,6 +37,11 @@
 	  transition: .5s ease-in-out;
 	  cursor: pointer;
 	  float: right;
+	  &:hover {
+			> * {
+				background: $blue;
+			}
+		}
 		span {
 			display: block;
 			position: absolute;
@@ -108,7 +113,7 @@
 		position: relative;
     top: 200px;
 		&:hover{
-			color:$watermelon;
+			color:$blue;
 		}
 	}
 }

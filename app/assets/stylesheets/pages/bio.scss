@@ -7,11 +7,11 @@ p,i {
   color: black;
 }
 #bio{
-  margin-top:100px;
+  margin-top:80px;
   .bio-header{
     hr {
       margin: 30px;
-      background-color: black;
+      background-color: $blue;
     }
   }
   .bio-content{
@@ -20,9 +20,14 @@ p,i {
     }
   }
   .bio-footer {
-    #github-icon {
+    margin-top:20px;
+    [class$="-icon"] {
+      margin:5px;
       color: black;
       font-size:36px;
+      &:hover {
+        color: $blue;
+      }
     }
   }
 }

@@ -1,20 +1,24 @@
 %main{ data: { init: 'home', load: 'home' } }
-  #splash-screen
+  / #splash-screen
+  #home    
     .container-fluid
       .row.text-xs-center
-        %h1 mattelia[dot]com
-      .row.text-xs-center
-        = icon('chevron-down', id: 'splash-screen-arrow-down')
-  #home
-    #left-panel
-      = link_to bio_path do
+        .col-xs-12
+          %h2#nav-title matt elia
+        .col-xs-8.offset-xs-2
+          %p.text-muted software developer, nyc
+      .row.text-xs-center.hidden-sm-down
+        .col-md-2.offset-md-5
+          %br
+          / %hr
+          / = icon('chevron-down', class: 'scroll-arrow')
+    = link_to bio_path do
+      .video-container
         = video_tag("nature.mp4", "nature.mp4", :loop=>'true', :autoplay=>'false', id: "nature")
-      #left-panel-overlay
-        %h1
-          portfolio
-    #right-panel
-      = link_to work_path do
+        .overlay-desc
+          %h1 life
+    = link_to work_path do
+      .video-container
         = video_tag("nurture.mp4", "nurture.mp4", :loop=>'true', :autoplay=>'false', id: "nyc")
-      #right-panel-overlay
-        %h1
-          bio
+        .overlay-desc
+          %h1 work

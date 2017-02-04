@@ -1,6 +1,16 @@
 %main{ data: { init: 'work', load: 'work' } }
-  #work.container
-    .row.text-xs-center
-      %h2.item-title= @work_item['title']
-      = image_tag ''+@work_item['images']['src']+'', class: 'img-fluid logo-thumb-img'
-      %p= @work_item['description']
+  #work
+    .container
+      .row.text-xs-center
+        %h4.item-title= @work_item['title']
+        .col-xs-4.offset-xs-4
+          %hr
+        .row
+          .col-md-6.col-xs-12
+            - if @work_item['images']['gif'].nil?
+              = image_tag ''+@work_item['images']['src']+'', class: 'img-fluid work-item-img'
+            - else
+              = image_tag ''+@work_item['images']['gif']+'', class: 'img-fluid work-item-img'
+          .col-md-6.col-xs-12.text-xs-left
+            .container
+              %p= @work_item['description']

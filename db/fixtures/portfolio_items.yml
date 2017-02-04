@@ -1,46 +1,12 @@
 portfolio_item_01:
-  title: "Raymond James Inc"
+  title: "Raymond James"
   permalink: "raymond-james"
   description: "Built animation-heavy web application for client: financial services firm, RAYMOND JAMES FINANCIAL INC (RJF - NYSE).  Utilized D3js - Data Visualization JS library.  Code Samples upon request"
   images:
     src: "rj-logo.png"
+    gif: "rayj.gif"
 
 portfolio_item_02:
-  title: "Canon"
-  permalink: "canon"
-  description: "built interactive kiosk for the annual Canon Expo at the Javits Center"
-  images:
-    src: "canon-logo.png"
-
-portfolio_item_03:
-  title: "Cadillac"
-  permalink: "cadillac"
-  description: "pitch"
-  images:
-    src: "caddy-logo.png"
-
-portfolio_item_04:
-  title: "Itsu"
-  permalink: "itsu"
-  description: "UK sushi chain"
-  images:
-    src: "itsu-logo.png"
-
-portfolio_item_05:
-  title: "Douglas Elliman"
-  permalink: "douglas-elliman"
-  description: "bopa"
-  images:
-    src: "elliman-logo.jpeg"
-
-portfolio_item_06:
-  title: "SolidX"
-  permalink: "solidx"
-  description: "SolidX (www.sldx.com) - Bitcoin / Blockchain company.  Scroll-Based Animation."
-  images:
-    src: "sldx-logo.svg"
-
-portfolio_item_07:
   title: "Homer"
   permalink: "homer"
   description: "Real Estate web application built on MySQL, PHP (Laravel) backend. Core frontend logic written in  “vanilla” Javascript, utilizing Google Maps, Places, Directions, and Distance Matrix Service APIs.
@@ -49,10 +15,47 @@ Algorithm sorts all apartment rental listings on the market displaying each buil
   • Provisional patent identifier ‘03923358’"
   images:
     src: "homer-logo.png"
+    gif: "homer.gif"
 
-portfolio_item_08:
-  title: "LighterJack"
-  permalink: "lighterjack"
-  description: "LJ"
+portfolio_item_03:
+  title: "Canon"
+  permalink: "canon"
+  description: "built interactive kiosk for the annual Canon Expo at the Javits Center"
   images:
-    src: "lj-logo.png"
+    src: "canon-logo.png"
+
+portfolio_item_04:
+  title: "Douglas Elliman"
+  permalink: "douglas-elliman"
+  description: "bopa"
+  images:
+    src: "elliman-logo.jpeg"
+
+portfolio_item_05:
+  title: "Subaru"
+  permalink: "subaru"
+  description: "frontend / paperless"
+  images:
+    src: "subaru-logo.jpg"
+
+portfolio_item_06:
+  title: "SolidX"
+  permalink: "solidx"
+  description: "SolidX (www.sldx.com) - Bitcoin / Blockchain company.  Scroll-Based Animation."
+  images:
+    src: "sldx-logo.svg"
+    gif: "sldx.gif"
+
+# portfolio_item_05:
+#   title: "LighterJack"
+#   permalink: "lighterjack"
+#   description: "LJ"
+#   images:
+#     src: "lj-logo.png"
+    # portfolio_item_04:
+#   title: "Itsu"
+#   permalink: "itsu"
+#   description: "UK sushi chain"
+#   images:
+#     src: "itsu-logo.png"
+# 

@@ -1,0 +1,14 @@
+%main{ data: { init: 'footer', load: 'footer' } }
+  %footer{style: 'position:fixed;bottom:0;left:0;right:0;background-color:cornflowerblue;height:100px;'}
+    .container-fluid
+      .row.text-xs-center
+        .col-xs-12
+          %ul.list-unstyled
+            %li
+              = link_to 'life', bio_path, class: 'menu-link'
+            %li
+              = link_to 'work', work_path, class: 'menu-link'
+            %li
+              - if !current_page?(root_path)
+                = link_to :root do
+                  = icon('home', style: 'font-size:50px;')

@@ -1,5 +1,4 @@
 %main{ data: { init: 'bio', load: 'bio' } }
-  = video_tag("nature.mp4", "nature.mp4", :loop=>'true', :autoplay=>'true', style: 'position:fixed;top:0;left:-110%;opacity:0;', id: 'bio-bg-vid')
   #bio.container-fluid
     .row.text-xs-center
       .col-lg-4.offset-lg-4.col-xs-12
@@ -14,6 +13,7 @@
           %br
           %p currently most interested in building location-based + real-time applications.
         .bio-footer
-          %br
           %a{ href: '//github.com/matthew-elia'}
-            = icon('github', id: 'github-icon')
+            = icon('github', class: 'github-icon')
+          %a{ href: '#'}
+            = icon('envelope', class: 'envelope-icon')
