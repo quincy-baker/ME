@@ -17,27 +17,16 @@
     .container-fluid
       .row.text-xs-center
         .col-xs-12
-          //clean up br's 
-          %br
-          %br
-          %br
-          = link_to work_path do
-            .video-container
-              = video_tag("nurture.mp4", "nurture.mp4", :loop=>'true', :autoplay=>'false', id: "nyc")
-              .overlay-desc
-                %h1 work
-          
-          //clean up br's 
-          %br.hidden-md-up
-
-          = link_to life_path do
-            .video-container
-              = video_tag("nature.mp4", "nature.mp4", :loop=>'true', :autoplay=>'false', id: "nature")
-              .overlay-desc
-                %h1 life
-
-    %footer{style: 'position:fixed;bottom:0;left:0;right:0;padding-bottom:30px;'}
-      .container-fluid
-        .row.text-xs-center
-          = link_to :root do
-            = icon('anchor', '', style: 'font-size:35px;')
+          #menu-circle-link-wrapper
+            = link_to work_path do
+              .image-wrapper
+                %span.image-overlay
+                  %span.content work
+                = image_tag 'nycity.jpg', class: '' 
+            = link_to life_path do
+              .image-wrapper
+                %span.image-overlay
+                  %span.content life
+                = image_tag 'cuba.jpg', class: '' 
+      = link_to :root do
+        = icon('power-off', '', id: 'power-off-icon')
