@@ -8,12 +8,12 @@ p,i {
 }
 #life{
   margin-top:80px;
+  @media (max-width: 662px) {
+    margin-top:40px;
+  }
   .life-header{
     h1 {
       margin-bottom: 0;
-    }
-    hr {
-      background-color: $blue;
     }
   }
   .life-content{

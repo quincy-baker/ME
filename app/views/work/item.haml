@@ -2,15 +2,17 @@
   #work
     .container
       .row.text-xs-center
-        %h4.item-title= @work_item['title']
-        .col-xs-4.offset-xs-4
+        .col-xs-8.offset-xs-2
+          %h4.item-title= @work_item['title']
           %hr
-        .row
-          .col-md-6.col-xs-12
+      .row
+        .col-md-6.col-xs-12{ style: 'padding:0;' }
+          .item-description-img
             - if @work_item['images']['gif'].nil?
-              = image_tag ''+@work_item['images']['src']+'', class: 'img-fluid work-item-img'
+              = image_tag ''+@work_item['images']['src']+'', class: 'img-fluid'
             - else
-              = image_tag ''+@work_item['images']['gif']+'', class: 'img-fluid work-item-img'
-          .col-md-6.col-xs-12.text-xs-left
-            .container
+              = image_tag ''+@work_item['images']['gif']+'', class: 'img-fluid'
+        .col-md-6.col-xs-12
+          .item-description-text
+            .text-xs-left
               %p= @work_item['description']

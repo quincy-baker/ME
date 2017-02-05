@@ -20,7 +20,17 @@
 			max-height: 140px;
 		}
 	}
-	.work-item-img {	}
+	.item-description-img { 
+		margin: 0 0 10px 0; 
+		@media (max-width: 768px) {
+			margin-top: 5px;
+		}
+	}
+	.item-description-text { 
+		@media (max-width: 768px) {
+			margin-top: 15px; 
+		}
+	}
 }
 #work-item-page-back-btn {
 	position: relative;

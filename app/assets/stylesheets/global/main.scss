@@ -15,10 +15,10 @@ html,body {
   position: relative;
   z-index: 2000;
   top:90px;
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     top:120px;
   }
-  // @media(min-width: 992px) {
-  //   top:150px;
-  // }
+}
+hr {
+  background: $blue;
 }
