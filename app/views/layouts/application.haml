@@ -1,5 +1,4 @@
 !!!
-/ %html{ :onmouseleave=>"home.splashTransition()" }
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
@@ -9,7 +8,19 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+
+    %input#switch{:checked => "checked", :type => "checkbox", :class => 'power-switch-els'}
+    %label.switch-label{:for => "switch"}= icon('power-off', '', id: 'power-off-icon', :class => 'power-switch-els')
+
     = render partial: 'base/header'
-    #content
-      = yield
-    / = render partial: 'base/footer'
+
+    - if current_page?(:root)
+      #content
+        =yield
+    - else
+      .tv-container
+        #content.screen
+          - if !current_page?(:root||work_item_path)
+            = render partial: 'base/menu'
+          = yield
+        .overlay welcome to the bakerNet

@@ -1,25 +1,9 @@
-// FIX: separate side-menu dependencies
 #home {
-  #nav-title {
-    position: fixed;
-    top:20px;
-    left:0;
-    right: 0;
-    @media (min-width:768px) {
-      top:50px;
-    }
-  }
-  #nav-subtitle {
-    position: fixed;
-    top:55px;
-    left:0;
-    right: 0;
-    letter-spacing: 2px;
-    @media (min-width:768px) {
-      letter-spacing: 4px;
-      top:100px;
-    }
-  }
+  position:absolute;
+  top:100px;
+  bottom:0;
+  left:0;
+  right:0;
   a {
     .video-container {
       position: relative;

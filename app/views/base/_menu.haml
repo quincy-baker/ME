@@ -1,0 +1,14 @@
+#menu
+  .row.text-xs-center
+    .col-xs-12
+      #menu-circle-link-wrapper
+        = link_to work_path do
+          .image-wrapper
+            %span.image-overlay
+              %span.content work
+            = image_tag 'nycity.jpg', class: '' 
+        = link_to life_path do
+          .image-wrapper
+            %span.image-overlay
+              %span.content life
+            = image_tag 'cuba.jpg', class: ''

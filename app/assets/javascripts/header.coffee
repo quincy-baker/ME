@@ -1,6 +1,7 @@
 window.header =
   el:
     nav_icon: '#nav-icon'
+    power_off_icon: '#power-off-icon'
 		menu: '#menu'  
 
   init: ->
@@ -15,21 +16,21 @@ window.header =
 		  $('#content').animate {
 		    'right': '110%',
 		    'opacity': '0',
-		    'z-index': '1000'
-		  }, 500
-		  $('#menu').animate {
-		    'opacity': '1',
-		    'right': '0',
-		    'z-index': '2000'
-		  }, 500
+		    'z-index': '1'
+		  }, 500, ->
+			  $('#menu').animate {
+			    'opacity': '1',
+			    'right': '0',
+			    'z-index': '2'
+			  }, 500
  		else
 		  $('#menu').animate {
 		    'right': '-110%',
 		    'opacity': '0',
-		    'z-index': '1000'
-		  }, 500
-		  $('#content').animate {
-		    'opacity': '1',
-		    'right': '0',
-		    'z-index': '2000'
-		  }, 500
+		    'z-index': '1'
+		  }, 500, ->
+			  $('#content').animate {
+			    'opacity': '1',
+			    'right': '0',
+			    'z-index': '2'
+			  }, 500

@@ -7,6 +7,12 @@ class HomeController < ApplicationController
   def index
   end
 
+  # def toggle_menu
+    # @menu_state = !@menu_state
+    # redirect_to "#{params[:controller]}/menu?#{params[:state]}"
+    # render 'life'
+  # end
+
   private
 
   def get_variables

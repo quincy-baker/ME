@@ -1,13 +1,5 @@
 %main{ data: { init: 'home', load: 'home' } }
-  #home    
-    .container-fluid
-      .row.text-xs-center
-        .col-xs-12
-          %h2#nav-title matt elia
-          %p#nav-subtitle.text-muted SOFTWARE DEVELOPER, NYC
-      .row.text-xs-center.hidden-sm-down
-        .col-md-2.offset-md-5
-          %br
+  #home
     = link_to life_path do
       .video-container
         = video_tag("nature.mp4", "nature.mp4", :loop=>'true', :autoplay=>'false', id: "nature")

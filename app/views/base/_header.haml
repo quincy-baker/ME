@@ -5,28 +5,14 @@
         - if !params[:work_item].nil?
           = link_to :back do
             = icon('chevron-left')      
-      #nav__middle.hidden-sm-down
+      #nav__middle.text-xs-center
+        .col-xs-12
+          %h2#nav-title matt elia
+          %p#nav-subtitle.text-muted SOFTWARE DEVELOPER, NYC
       #nav__right.text-xs-right
-        - if !current_page?(root_path) && params[:work_item].nil?
+        - if current_page?(work_path||life_path)
           #nav-icon
             %span
             %span
             %span
             %span
-  #menu
-    .container-fluid
-      .row.text-xs-center
-        .col-xs-12
-          #menu-circle-link-wrapper
-            = link_to work_path do
-              .image-wrapper
-                %span.image-overlay
-                  %span.content work
-                = image_tag 'nycity.jpg', class: '' 
-            = link_to life_path do
-              .image-wrapper
-                %span.image-overlay
-                  %span.content life
-                = image_tag 'cuba.jpg', class: '' 
-      = link_to :root do
-        = icon('power-off', '', id: 'power-off-icon')

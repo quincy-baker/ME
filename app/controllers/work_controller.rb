@@ -8,7 +8,7 @@ class WorkController < ApplicationController
   end
 
   def work_item
-  	@work_item = yaml_load(:portfolio_items).detect do |work_item|
+    @work_item = yaml_load(:portfolio_items).detect do |work_item|
       work_item['permalink'].include?(params[:work_item])
     end
     render 'work/item'
